@@ -8,4 +8,6 @@ docker pull simonvanderveldt/rpi3-kernel-builder
 docker run --rm -ti \
   -v "${PWD}":/workdir \
   -e DEFCONFIG=norns_defconfig \
+  --cpus 16 \
+  -e MAKEFLAGS=-j \
   simonvanderveldt/rpi3-kernel-builder
