@@ -9,5 +9,5 @@ docker run --rm -ti \
   -v "${PWD}":/workdir \
   -e DEFCONFIG=norns_defconfig \
   --cpus 16 \
-  -e MAKEFLAGS=-j \
-  simonvanderveldt/rpi3-kernel-builder
+  -e MAKEFLAGS=-j16 \
+  simonvanderveldt/rpi3-kernel-builder /bin/bash
