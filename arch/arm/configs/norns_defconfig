@@ -865,7 +865,7 @@ CONFIG_LIBCRC32C=y
 # for perf_events:
 CONFIG_PERF_EVENTS=y
 # for stack traces:
-#CONFIG_FRAME_POINTER=y
+CONFIG_FRAME_POINTER=y
 # kernel symbols:
 #CONFIG_KALLSYMS=y
 # tracepoints:
@@ -876,8 +876,8 @@ CONFIG_PERF_EVENTS=y
 #CONFIG_KPROBES=y
 #CONFIG_KPROBE_EVENTS=y
 # user-level dynamic tracing:
-#CONFIG_UPROBES=y
-#CONFIG_UPROBE_EVENTS=y
+CONFIG_UPROBES=y
+CONFIG_UPROBE_EVENTS=y
 # full kernel debug info:
 #CONFIG_DEBUG_INFO=y
 # kernel lock tracing:
